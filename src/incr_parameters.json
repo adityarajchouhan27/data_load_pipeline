@@ -1,0 +1,4 @@
+{
+  "database_name": "datapipeline_db",
+  "table_name": "pipeline_load_date"
+}

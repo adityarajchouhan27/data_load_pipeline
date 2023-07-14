@@ -1,0 +1,73 @@
+{
+  "entities": {
+    "reference": {
+      "database_name": "datapipeline_db",
+      "table_name": "pipeline_load_date",
+      "refer_max_column": "max_date",
+      "refer_column_name": "table_name"
+    },
+    "developer_details": {
+      "destination": {
+        "database_name": "datapipeline_db",
+        "table_name": "developer_details"
+      },
+      "mapping": {
+        "Id": "Id",
+        "FirstName": "FirstName",
+        "LastName": "LastName",
+        "DOB": "DOB",
+        "CreatedDate": "CreatedDate",
+        "Salary": "Salary",
+        "WorkLocation": "WorkLocation",
+        "Designation": "Designation",
+        "LastModifiedDate": "LastModifiedDate"
+      },
+      "alter_type_datetime_cols": ["CreatedDate"],
+      "incremental": {
+        "column": "LastModifiedDate"
+      }
+    },
+    "devops_details": {
+      "destination": {
+        "database_name": "datapipeline_db",
+        "table_name": "devops_details"
+      },
+      "mapping": {
+        "Id": "Id",
+        "FirstName": "FirstName",
+        "LastName": "LastName",
+        "DOB": "DOB",
+        "CreatedDate": "CreatedDate",
+        "Salary": "Salary",
+        "WorkLocation": "WorkLocation",
+        "Designation": "Designation",
+        "LastModifiedDate": "LastModifiedDate"
+      },
+      "alter_type_datetime_cols": ["CreatedDate"],
+      "incremental": {
+        "column": "LastModifiedDate"
+      }
+    },
+    "tester_details": {
+      "destination": {
+        "database_name": "datapipeline_db",
+        "table_name": "tester_details"
+      },
+      "mapping": {
+        "Id": "Id",
+        "FirstName": "FirstName",
+        "LastName": "LastName",
+        "DOB": "DOB",
+        "CreatedDate": "CreatedDate",
+        "Salary": "Salary",
+        "WorkLocation": "WorkLocation",
+        "Designation": "Designation",
+        "LastModifiedDate": "LastModifiedDate"
+      },
+      "alter_type_datetime_cols": ["CreatedDate"],
+      "incremental": {
+        "column": "LastModifiedDate"
+      }
+    }
+  }
+}
